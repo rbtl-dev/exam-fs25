@@ -39,9 +39,9 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 # Task 2.2 (1)
 
-1.  Use the `filter()` function to remove all NAs from the `generation` data object.
+1.  Use the `filter()` function to remove all NAs from the `generation` data object and keep only cities with population greater than 100,000.
 
-2.  Store the result as a new object in your environment with the name `generation_complete`.
+2.  Store the result as a new object in your environment with the name `generation_filtered`.
 
 ```{r}
 
@@ -49,13 +49,13 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 # Task 2.3 (2)
 
-1.  Use the `mutate()` function to add a new column to `generation_complete` that is the municipal solid waste generation per person in kg/day. Name the column `waste_generation_person_kg_day`.
+1.  Use the `mutate()` function to add a new column to `generation_filtered` that is the municipal solid waste generation per person in kg/year. Name the column `waste_per_capita_kg_year`.
 
-2.  Use the pipe operator to add another line of code which uses the `relocate()` function to move the `waste_generation_person_kg_day` after the `city` column.
+2.  Use the pipe operator to add another line of code which uses the `relocate()` function to move the `waste_per_capita_kg_year` after the `country` column.
 
-3.  Use the pipe operator to add another line of code which uses the `select()` function to remove the `waste_generation` column.
+3.  Use the pipe operator to add another line of code which uses the `select()` function to remove the `population` column.
 
-4.  Store the result as a new object in your environment with the name `generation_person`.
+4.  Store the result as a new object in your environment with the name `waste_per_capita`.
 
 ```{r}
 
@@ -63,7 +63,7 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 # Task 2.4 (2)
 
-1.  Starting with `generation_person`, use a function of the slice family of functions to return the 5 countries with the highest municipal solid waste generation.
+1.  Starting with `waste_per_capita`, use a function of the slice family of functions to return the 8 cities with the lowest municipal solid waste generation per capita.
 
 2.  Use the pipe operator to add another line of code, then use a function you have learnt in the course to display a formatted version of the returned dataframe from the previous step.
 
@@ -73,21 +73,21 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 # Task 2.5 (5)
 
-1.  Use the data stored in `generation_person` to prepare a box- and jitterplot that displays income on the x-axis and municipal solid waste generation per person on the y-axis.
+1.  Use the data stored in `waste_per_capita` to prepare a violin- and jitterplot that displays income on the x-axis and municipal solid waste generation per capita on the y-axis.
 
-2.  Add a color aesthetic for the income categories.
+2.  Add a fill aesthetic for the income categories.
 
-3.  Set the width of the jitter to a value of 0.2.
+3.  Set the width of the jitter to a value of 0.3.
 
-4.  Set the transparency for the points in the jitter to a value of 0.75.
+4.  Set the transparency for the points in the jitter to a value of 0.6.
 
-5.  Set the size of the points in the jitter to a value of 2.
+5.  Set the size of the points in the jitter to a value of 1.5.
 
-6.  Do not display the outliers for the boxplot.
+6.  Set the transparency for the violin plot to a value of 0.8.
 
-7.  Change the color palette to colors of your choice.
+7.  Change the fill palette to colors of your choice.
 
-8.  Remove the legend from the plot.
+8.  Add appropriate axis labels and a title to the plot.
 
 ```{r}
 
