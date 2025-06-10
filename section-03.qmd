@@ -31,7 +31,7 @@ generation <- read_csv("data/what-a-waste/waste-generation.csv")
 treatment_long <- read_csv("data/what-a-waste/treatment-long.csv")
 ```
 
-# Task 3.1 (1)
+# Task 3.2 (1)
 
 1.  Use a function of the family of \*\_join functions to join the `treatment_long` data object with the `generation` data object.
 
@@ -41,7 +41,7 @@ treatment_long <- read_csv("data/what-a-waste/treatment-long.csv")
 
 ```
 
-# Task 3.2 (11)
+# Task 3.3 (11)
 
 This task requires you to write a code sequence with several steps. It is up to you if you create intermediate data objects and how you name the variables. Use functions you have learned in the course to answer the following three questions.
 
@@ -56,7 +56,7 @@ This task requires you to write a code sequence with several steps. It is up to 
 
 ```
 
-# Task 3.6 - Hand-in (0.5)
+# Task 3.4 - Hand-in (0.5)
 
 1.  Render the document and fix any errors.
 
