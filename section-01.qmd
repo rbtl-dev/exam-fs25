@@ -16,7 +16,7 @@ editor_options:
 
 The maximum number of points for this section is: **12 out of 53**. The number of points for each task is shown in parenthesis next to the task number.
 
-# Task 2.0 (0.5)
+# Task 1.0 (0.5)
 
 1.  Render the document and fix any errors.
 
@@ -29,7 +29,7 @@ generation <- read_csv("data/what-a-waste/waste-generation.csv")
 dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 ```
 
-# Task 2.1 (1)
+# Task 1.1 (1)
 
 1.  Explore the dictionary data object to learn more about the data.
 
@@ -37,7 +37,7 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 ```
 
-# Task 2.2 (1)
+# Task 1.2 (1)
 
 1.  Use the `filter()` with the `generation` data object to remove all NAs from `waste_generation` and `population` columns. 
 
@@ -49,7 +49,7 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 ```
 
-# Task 2.3 (2)
+# Task 1.3 (2)
 
 1.  Use the `mutate()` function to add a new column to `generation_filtered` that is the municipal solid waste generation per person in kg/year. Name the column `waste_per_capita_kg_year`.
 
@@ -63,7 +63,7 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 ```
 
-# Task 2.4 (2)
+# Task 1.4 (2)
 
 1.  Starting with `waste_per_capita`, return the 10 cities with the lowest municipal solid waste generation per capita.
 
@@ -73,7 +73,7 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 ```
 
-# Task 2.5 (5)
+# Task 1.5 (5)
 
 1.  Use the data stored in `waste_per_capita` to prepare a violin- and jitterplot that displays income on the x-axis and municipal solid waste generation per capita on the y-axis.
 
@@ -96,7 +96,7 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 ```
 
-# Task 2.6 - Hand-in (0.5)
+# Task 1.6 - Hand-in (0.5)
 
 1.  Render the document and fix any errors.
 
