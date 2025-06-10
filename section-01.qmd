@@ -39,9 +39,9 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 # Task 1.2 (1)
 
-1.  Use the `filter()` with the `generation` data object to remove all NAs from `waste_generation` and `population` columns. 
+1.  Use the `filter()` with the `generation` data object to remove all NAs from `waste_generation` and `population` columns.
 
-2. Keep only cities with population greater than 100,000.
+2.  Keep only cities with population greater than 100,000.
 
 3.  Store the result as a new object in your environment with the name `generation_filtered`.
 

@@ -60,22 +60,24 @@ How many countries are covered in this dataset?
 
 ```
 
-# Task 2.4 (3)
+# Task 2.4 (1.5)
 
 1.  Starting with the `treatment_tidy` data object, use functions taught during the course to answer the following question:
 
-Which country has the fewest number of cities in the dataset, and what is the average treatment value for that country?
+Which country has the highest number of cities in the dataset, and how many cities is that?
 
 ```{r}
 
 
 ```
 
-# Task 2.5 (1.5)
+# Task 2.5 (3)
 
-1.  Starting with the `treatment_tidy` data object, use functions taught during the course to answer the following question:
+1.  Starting with the `treatment_tidy` data object, use functions taught during the course to answer the following questions:
 
-In how many cities is at least 50% of waste sent to landfill?
+-   How many categories of waste treatment are there in the dataset?
+-   How many categories are related to landfill? (Requirement: use `str_detect()` to identify them)
+-   In how many cities is at least 50% of waste sent to a controlled landfill?
 
 ```{r}
 
