@@ -39,9 +39,11 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 # Task 2.2 (1)
 
-1.  Use the `filter()` function to remove all NAs from the `generation` data object and keep only cities with population greater than 100,000.
+1.  Use the `filter()` with the `generation` data object to remove all NAs from `waste_generation` and `population` columns. 
 
-2.  Store the result as a new object in your environment with the name `generation_filtered`.
+2. Keep only cities with population greater than 100,000.
+
+3.  Store the result as a new object in your environment with the name `generation_filtered`.
 
 ```{r}
 
@@ -63,7 +65,7 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 # Task 2.4 (2)
 
-1.  Starting with `waste_per_capita`, use a function of the slice family of functions to return the 8 cities with the lowest municipal solid waste generation per capita.
+1.  Starting with `waste_per_capita`, return the 10 cities with the lowest municipal solid waste generation per capita.
 
 2.  Use the pipe operator to add another line of code, then use a function you have learnt in the course to display a formatted version of the returned dataframe from the previous step.
 
