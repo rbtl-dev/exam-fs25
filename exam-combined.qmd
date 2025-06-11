@@ -12,11 +12,15 @@ editor_options:
   chunk_output_type: console
 ---
 
+# Printed Exam
+
+This printed exam version is used as a backup in case Posit Cloud fails to start projects during the examination period. The exam contains a total of **33 points** distributed across three sections. Please note that the final assessment will be oriented on the maximum number of points achieved, which will then correspond to 100% of the grade. This adjustment accounts for the fact that this is not a handwritten exam and is not being completed within the RStudio environment.
+
 # Section 01
 
 ## Points
 
-The maximum number of points for this section is: **11 out of 54**. The number of points for each task is shown in parenthesis next to the task number.
+The maximum number of points for this section is: **11 out of 33**. The number of points for each task is shown in parenthesis next to the task number.
 
 ```{r}
 library(tidyverse)
@@ -35,7 +39,7 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 ```
 
-```
+```         
 #
 #
 #
@@ -65,7 +69,7 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 ```
 
-```
+```         
 #
 #
 #
@@ -97,7 +101,7 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 ```
 
-```
+```         
 #
 #
 #
@@ -125,7 +129,7 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 ```
 
-```
+```         
 #
 #
 #
@@ -166,7 +170,7 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 ```
 
-```
+```         
 #
 #
 #
@@ -188,7 +192,7 @@ dictionary <- read_csv("data/what-a-waste/dictionary.csv")
 
 ## Points
 
-The maximum number of points for this section is: **10 out of 54**. The number of points for each task is shown in parenthesis next to the task number.
+The maximum number of points for this section is: **10 out of 33**. The number of points for each task is shown in parenthesis next to the task number.
 
 ```{r}
 treatment <- read_csv("data/what-a-waste/waste-treatment.csv")
@@ -202,7 +206,7 @@ treatment <- read_csv("data/what-a-waste/waste-treatment.csv")
 
 ```
 
-```
+```         
 #
 #
 #
@@ -234,7 +238,7 @@ The `treatment` data does not follow tidy data principles. It is in a wide forma
 
 ```
 
-```
+```         
 #
 #
 #
@@ -262,7 +266,7 @@ How many countries are covered in this dataset?
 
 ```
 
-```
+```         
 #
 #
 #
@@ -291,7 +295,7 @@ Which country has the highest number of cities in the dataset, and how many citi
 
 ```
 
-```
+```         
 #
 #
 #
@@ -321,7 +325,7 @@ Which country has the highest number of cities in the dataset, and how many citi
 
 ```
 
-```
+```         
 #
 #
 #
@@ -343,105 +347,13 @@ Which country has the highest number of cities in the dataset, and how many citi
 
 ## Points
 
-The maximum number of points for this section is: **11 out of 54**. The number of points for each task is shown in parenthesis next to the task number.
-
-```{r}
-generation <- read_csv("data/what-a-waste/waste-generation.csv")
-treatment_long <- read_csv("data/what-a-waste/treatment-long.csv")
-```
-
-## Task 3.2 (1)
-
-The following code performs a join operation to combine the `treatment_long` and `generation` data objects based on the common columns `country`, `city`, and `income_id`. The result is stored in a new data object called `treatment_generation`.
-
-1. Run the code below to perform the join operation.
-
-2. Explore the resulting `treatment_generation` data object and think about the content of the `value` column.
-
-```{r}
-
-treatment_generation <- treatment_long |> 
-  left_join(generation, by = c("country", "city", "income_id"))
-
-```
-
-```
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-```
-
-## Task 3.3 (10)
-
-This task requires you to analyze waste treatment data through multiple steps. You may create intermediate data objects if needed.
-
-### Background Information
-
-The `value` column in the `treatment_generation` data represents the percentage of waste that receives each treatment type. This percentage applies proportionally to both the waste generation AND the population figures.
-
-### Your Task: Answer Three Questions
-
-**Step 1: Data Preparation** First, create a comprehensive dataset that:
-
--   Calculates actual tons of waste for each treatment type (using percentages from `value` column in combination with `waste_generation`)
-
--   Adjusts population figures proportionally to match the treatment percentages
-
--   Groups data by country and treatment type
-
--   Summarizes total waste and population for each country-treatment combination
-
--   Calculate per capita waste generation in kg/day
-
-**Question 1:** Using your prepared data, determine how many tons of waste per year are openly dumped in Sri Lanka and Bhutan combined.
-
-
-```{r}
-
-
-```
-
-```
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-```
-
-# Section 04
-
-## Points
-
-The maximum number of points for this section is: **12 out of 54**. The number of points for each task is shown in parenthesis next to the task number.
+The maximum number of points for this section is: **12 out of 33**. The number of points for each task is shown in parenthesis next to the task number.
 
 ```{r}
 treatment_mean <- read_csv("data/what-a-waste/treatment-mean.csv")
 ```
 
-## Task 4.1 (3)
+## Task 3.1 (3)
 
 Starting with the `treatment_mean` data object, use functions taught during the course to complete the following task:
 
@@ -454,7 +366,7 @@ Starting with the `treatment_mean` data object, use functions taught during the 
 
 ![](img/tbl-01-treatment-by-income-mean.png)
 
-```
+```         
 #
 #
 #
@@ -472,7 +384,7 @@ Starting with the `treatment_mean` data object, use functions taught during the 
 #
 ```
 
-## Task 4.2 (9)
+## Task 3.2 (9)
 
 1.  Starting with the `treatment_mean` data object, use functions taught during the course to complete the following task:
 
@@ -490,7 +402,7 @@ Reproduce the plot that you see as an image below when you render the report and
 
 ![](img/fig-01-treatment-by-income-mean.png)
 
-```
+```         
 #
 #
 #
@@ -507,7 +419,3 @@ Reproduce the plot that you see as an image below when you render the report and
 #
 #
 ```
-
----
-
-Last complete render: `r Sys.time()` at timezone `r Sys.timezone()`.
